@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import Pricing from './components/Pricing'
 import Stats from './components/Stats'
 import Steps from './components/Steps'
+import ProductsData from '/products.json'
 
 function App() {
   
