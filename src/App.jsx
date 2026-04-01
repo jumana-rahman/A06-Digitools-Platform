@@ -8,6 +8,7 @@ import Products from "./components/Products";
 import Cart from "./components/Cart";
 import { ToastContainer, toast } from "react-toastify";
 import { useState, useEffect } from 'react'
+import Footer from './components/Footer'
 
 function App() {
   const [view, setView] = useState("products");
@@ -103,6 +104,8 @@ function App() {
       <Steps/>
 
       <Pricing/>
+
+      <Footer/>
 
 
     </>
