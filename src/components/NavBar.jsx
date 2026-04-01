@@ -2,7 +2,7 @@ import React from 'react';
 import { CiShoppingCart } from "react-icons/ci";
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-const NavBar = () => {
+const NavBar = ({cartCount}) => {
     return (
         <nav className='border-b border-zinc-200'>
             <div className="navbar w-[90%] mx-auto">
@@ -36,7 +36,7 @@ const NavBar = () => {
                     <div>
                         <CiShoppingCart className='w-10 font-semibold text-[16px] cursor-pointer hover:text-[#9514FA] relative' />
                         
-                        <span className='absolute w-4 h-4 bg-red-500 text-white rounded-full top-4 right-51 text-[12px] flex justify-center items-center'>1</span>
+                        <span className='absolute w-4 h-4 bg-red-500 text-white rounded-full top-4 right-51 text-[12px] flex justify-center items-center'>{cartCount}</span>
                     </div>
                     
                     <a className='font-semibold cursor-pointer text-[#101727] hover:text-[#9514FA]'>Login</a>
