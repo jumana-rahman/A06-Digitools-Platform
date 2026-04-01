@@ -6,7 +6,7 @@ import Rocket from '../assets/rocket.png'
 const Steps = () => {
     return (
         <div className='py-12 bg-[#F1F1F1]'>
-            <div className='w-[90%] mx-auto'>
+            <div className='max-w-[90%] mx-auto'>
                 <h2 className='text-[48px] font-extrabold text-[#101727] text-center'>Get Started In 3 Steps</h2>
                 <p className='text-[16px] font-normal text-[#627382] text-center'>Start using premium digital tools in minutes, not hours.</p>
 
