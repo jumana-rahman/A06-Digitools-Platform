@@ -36,7 +36,11 @@ const NavBar = ({cartCount}) => {
                     <div>
                         <CiShoppingCart className='w-10 font-semibold text-[16px] cursor-pointer hover:text-[#9514FA] relative' />
                         
-                        <span className='absolute w-4 h-4 bg-red-500 text-white rounded-full top-4 right-51 text-[12px] flex justify-center items-center'>{cartCount}</span>
+                        {cartCount > 0 && (
+                            <span className="absolute w-4 h-4 bg-red-500 text-white rounded-full top-4 right-51 text-[12px] flex justify-center items-center">
+                                {cartCount}
+                            </span>
+                        )}
                     </div>
                     
                     <a className='font-semibold cursor-pointer text-[#101727] hover:text-[#9514FA]'>Login</a>

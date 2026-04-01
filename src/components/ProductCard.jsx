@@ -4,7 +4,7 @@ import { FaCheck } from 'react-icons/fa';
 const ProductCard = ({ product, onAdd }) => {
     const [added, setAdded] = useState(false);
 
-    // ✅ Badge color logic
+    
     const badgeColor = {
         "best-seller": "badge-soft badge-warning",
         "new": "badge-soft badge-success",
@@ -39,7 +39,6 @@ const ProductCard = ({ product, onAdd }) => {
         <span className='font-bold text-2xl text-[#101727]'>${product.price}</span> / {product.period}
       </p>
 
-      {/* Features */}
       <ul className="mt-3 space-y-1">
         {product.features.slice(0, 3).map((f, i) => (
           <li key={i} ><span className='flex items-center gap-2'><FaCheck className='text-green-600'/> {f}</span></li>

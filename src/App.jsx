@@ -22,20 +22,17 @@ function App() {
       .then(data => setProducts(data));
   }, []);
 
-  // ✅ Add to cart
   const handleAddToCart = (product) => {
     setCart([...cart, product]);
     toast.success("Added to cart");
   };
 
-  // ✅ Remove from cart
   const handleRemove = (id) => {
     const updated = cart.filter((item) => item.id !== id);
     setCart(updated);
     toast.error("Removed from cart");
   };
 
-  // ✅ Checkout
   const handleCheckout = () => {
     setCart([]);
     toast.info("Checkout successful");
