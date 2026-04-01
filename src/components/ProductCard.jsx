@@ -17,21 +17,26 @@ const ProductCard = ({ product, onAdd }) => {
     };
 
     return (
-    <div className="card bg-base-100 shadow-lg p-4 space-y-3">
-      <div className='flex justify-between items-center'>
-        <img src={product.icon} className="w-12 h-12" />
+    <div className="card bg-base-100 shadow-lg p-4 space-y-3 border border-zinc-100 rounded-lg text-[#627382]">
+
+      <div className='flex justify-between'>
+        <div></div>
         <div className={`badge ${badgeColor[product.tagType]} mt-2`}>
           {product.tag}
         </div>
       </div>
 
-      <h2 className="text-lg font-bold mt-2">{product.name}</h2>
+      <div className='flex justify-between items-center'>
+        <img src={product.icon} className="w-12 h-12" />
+      </div>
+
+      <h2 className="text-lg text-[#101727] font-bold mt-2">{product.name}</h2>
 
 
       <p className="text-sm mt-2">{product.description}</p>
 
       <p className="mt-3 font-normal text-[16px]">
-        <span className='font-bold text-2xl'>${product.price}</span> / {product.period}
+        <span className='font-bold text-2xl text-[#101727]'>${product.price}</span> / {product.period}
       </p>
 
       {/* Features */}
