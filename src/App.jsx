@@ -1,7 +1,8 @@
 import './App.css'
 import Banner from './components/Banner'
-import Counter from './components/Counter'
 import NavBar from './components/NavBar'
+import Stats from './components/Stats'
+import Steps from './components/Steps'
 
 function App() {
   
@@ -12,7 +13,9 @@ function App() {
 
       <Banner/>
 
-      <Counter/>
+      <Stats/>
+
+      <Steps/>
 
 
     </>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Counter = () => {
+const Stats = () => {
     return (
         <div className='py-12 bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>
             <div className='w-[90%] mx-auto block md:flex justify-evenly items-center gap-8 text-center space-y-8 md:space-y-0'>
@@ -23,4 +23,4 @@ const Counter = () => {
     );
 };
 
-export default Counter;
+export default Stats;
