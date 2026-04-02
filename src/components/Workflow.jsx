@@ -7,7 +7,7 @@ const Workflow = () => {
                 <h1 className='text-[40px] font-extrabold capitalize'>Ready to transform your workflow?</h1>
                 <p className='text-[16px] font-normal'>Join thousands of professionals who are already using DigiTools to work smarter. <br />Start your free trial today.</p>
 
-                <div className='flex flex-col sm:flex-row justify-center gap-3 mt-6 mb-2'>
+                <div className='flex flex-col sm:flex-row justify-center gap-3 mt-6 mb-4'>
                     <button className='btn bg-white rounded-full text-[#9514FA] hover:bg-zinc-200'>Explore Products</button>
 
                     <button className='btn bg-transparent rounded-full text-white border border-white hover:bg-white hover:text-[#9514FA] '>View Pricing</button>
